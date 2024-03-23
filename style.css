@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-navbar{
+    list-style-type: none;
+    background: linear-gradient(to bottom, #5c5e86, #87899c);
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-list{
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 100px;
+}
+
+.navbar-link:hover{
+    color: navy;
+}
+
+.navbar-home{
+    text-decoration: none;
+    color: navy;
+    margin-right: 100px;
+}
+
+.navbar-home:hover{
+    color: white;
+}
+
+.image-container{
+    width: 30%;
+    float: left;
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+
+.back-image,
+.front-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+.back-image{
+    z-index: 1;
+}
+
+.front-image{
+    z-index: 2;
+}
+
+@font-face {
+    font-family: 'Junge';
+    src: url('Assets/Font/Junge/Junge-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-button{
+    background-color: #5c5e86;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.custom-button:hover{
+    background-color: #87899c;
+}
+
